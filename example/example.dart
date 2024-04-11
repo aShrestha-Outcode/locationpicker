@@ -12,9 +12,9 @@ class PickerDemoState extends State<PickerDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('Picker Example')),
       body: Center(
-        child: FlatButton(
+        child: InkWell(
           child: Text("Pick Delivery location"),
-          onPressed: () {
+          onTap: () {
             showPlacePicker();
           },
         ),
